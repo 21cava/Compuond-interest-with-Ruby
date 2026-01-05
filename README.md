@@ -14,5 +14,8 @@ Ruby was chosen for this module due to its concise syntax and efficiency in text
 **Ruby** (Version 3.0 or higher recommended).
 The project doesn't rely on standard Ruby gems.
 
+## ⚠️ Disclaimer
+This project is for educational and research purposes only. It does not constitute financial advice. Past performance is not indicative of future results.
+
 ---
 *Created by L.*
