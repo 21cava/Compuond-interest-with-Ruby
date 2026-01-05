@@ -1,0 +1,32 @@
+class CompoundInterest
+  def initialize(principal, rate_percentile, years)
+    @principal = principal
+    @r = rate_percentile / 100.0
+    @y = years
+  end
+
+
+#Info table
+  def generate_table
+    c = @principal
+    total_interest = 0.0
+    puts "-" * 20
+   puts "Starting capital: #{@principal}$ | Interest rate: #{@r}% | Years: #{@y}"
+   puts "=" * 20
+   puts sprintf("%-10s | %-15s | %-15s", "Year", "Interest Earned", "Amount")
+   puts "-" * 20
+
+# Calculation compound interest
+   1.upto(@y) do |year|
+     yearly_interest = c * @r
+     c += yearly_interest
+      total_interest += yearly_interest
+    puts sprintf("%-10d | %-15.2f | %-15.2f", year, yearly_interest, C)
+     end
+  puts "-" * 20
+  end
+end
+
+# Create an instance of the CompoundInterest class and generate the table
+calculator = CompoundInterest.new(10000, 7, 10)
+calculator.generate_table
